@@ -79,6 +79,23 @@ body {
   border: 1px solid var(--Grayish-Blue);
   border-radius: 5px;
 }
+.form input:invalid {
+  background: url("images/icon-error.svg") no-repeat 95% 50%;
+  border: 2px solid var(--Red);
+}
+.error {
+  width: 100%;
+  padding: 0;
+  text-align: right;
+  font-size: 80%;
+  color: var(--Red);
+  box-sizing: border-box;
+  font-size: 12px;
+  font-style: italic;
+}
+.error.active {
+  padding: 1px;
+}
 .form p {
   font-size: 10px;
   font-weight: 400;
@@ -98,6 +115,10 @@ body {
   border: 1px solid var(--Green);
   box-shadow: 0 5px hsl(154, 59%, 45%);
   cursor: pointer;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: hsl(154, 59%, 71%);
 }
 .attribution {
   font-size: 11px;
